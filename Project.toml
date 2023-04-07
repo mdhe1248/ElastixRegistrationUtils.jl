@@ -3,6 +3,9 @@ uuid = "8afc4f19-a3ce-40d9-8acc-56d8613cd7eb"
 authors = ["Donghoon Lee <mdhe1248@gmail.com> and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+
 [compat]
 julia = "1"
 
