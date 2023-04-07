@@ -7,7 +7,7 @@ function prepare_directories(wd)
 end
 
 function prepare_filenames(wd, datdir, prefix)
-  moving2ref_dir, transformed_roi_coordinates_dir, results_dir = prepare_directories(wd)
+  moving2ref_dir, transformed_roi_coordinates_dir, results_dir, roi_dir = prepare_directories(wd)
   autofn = datdir*prefix*"reimgauto.nrrd" #Maybe loading the original and using `resample` is better for the whole image analysis.
   fosfn = datdir*prefix*"reimgfos.nrrd" #Maybe loading the original and using `resample` is better.
   pointFileName = roi_dir*prefix*"roi_coordinates.txt"
