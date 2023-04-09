@@ -14,9 +14,9 @@ function load_annotation_lbls(jsonfn, annotationImg)
   open(jsonfn) do io
     push!(d, JSON.parse(io));
   end
-
   ## prepare data for DataFrame
   subbrain_ids = Int.(unique(annotationImg))
   subbrain_labels = map(x -> retrieve(d[1], "name", "id", x), subbrain_ids)
-  parent_ids = map(x -> retrieve(d[1],"parent_structure_id", "id", x), subbrain_ids)                   return(d, subbrain_ids, subbrain_labels, parent_ids)
+  parent_ids = map(x -> retrieve(d[1],"parent_structure_id", "id", x), subbrain_ids)
+  return(d, subbrain_ids, subbrain_labels, parent_ids)
 end
