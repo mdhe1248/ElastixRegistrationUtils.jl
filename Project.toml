@@ -4,6 +4,7 @@ authors = ["Donghoon Lee <mdhe1248@gmail.com> and contributors"]
 version = "1.0.0-DEV"
 
 [deps]
+BrainAnnotationMapping = "b2487db3-5334-4ba7-8dc4-363ca558c56d"
 DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
